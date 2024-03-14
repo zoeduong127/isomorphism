@@ -3,7 +3,6 @@ Includes functions for reading and writing graphs, in a very simple readable for
 """
 # Version: 30-01-2015, Paul Bonsma
 # Version: 29-01-2017, Pieter Bos
-
 # updated 30-01-2015: writeDOT also writes color information for edges.
 # updated 2-2-2015: writeDOT can also write directed graphs.
 # updated 5-2-2015: no black fill color used, when more than numcolors**2 vertices.

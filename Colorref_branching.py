@@ -2,7 +2,6 @@ from graph_io import *
 import os
 import time
 import sys
-
 def initialization(graphs):
     number = len(graphs)
     colouring_v_keys = [{} for _ in range(number)]

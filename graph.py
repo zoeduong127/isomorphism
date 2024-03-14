@@ -2,7 +2,6 @@
 This is a module for working with directed and undirected multi graphs.
 # version: 29-01-2015, Paul Bonsma
 # version: 01-02-2017, Pieter Bos, Tariq Bontekoe
-
 Class Graph Error: Used when an error occurs.
 Class Vertex: Vertex of a graph (graph, label, incidence), has the following functions that can be used:
               1. is_adjacent;
