@@ -30,8 +30,9 @@ It checks whether
 
 - trees
 It runs specific algorithms for tree types of graphs
-- GI problems
-It runs "Fast Color Refinement"
+- Complete Graph, edges graph
+It runs "easy_isomorphism" function instead of complicated isomorphism_algorithm.
+To make it faster.
 - others
 It runs "Basic Color Refinement"
 
