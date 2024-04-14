@@ -15,8 +15,24 @@ you can set this to "True".
 If you want to calculate how many automorphisms with 'automorphism' function,
 you can set this to "True".
 
+For testing, you need to set the filename from the test instances.
+For example, you can set like below.
+
+```text
+filename = "test/basicAut1.gr"
+```
+
 ## Test and Deploy
 
-## Editing this README
+When you run the code,
+the code will do preprocessing checks as well.
+It checks whether
+
+- trees
+It runs specific algorithms for tree types of graphs
+- GI problems
+It runs "Fast Color Refinement"
+- others
+It runs "Basic Color Refinement"
 
 ## Description
