@@ -5,13 +5,13 @@
 To run the test instances, we use "final.py" file.
 There are three conditions to run "final.py".
 
-- fast
+- fast:
 If you want to run 'Fast Color refinement' function,
 you can set this to "True".
-- twins
+- twins:
 If you want to run 'twins' function,
 you can set this to "True".
-- automorphism
+- automorphism:
 If you want to calculate how many automorphisms with 'automorphism' function,
 you can set this to "True".
 
@@ -28,12 +28,12 @@ When you run the code,
 the code will do preprocessing checks as well.
 It checks whether
 
-- trees
+- trees:
 It runs specific algorithms for tree types of graphs
-- Complete Graph, edges graph
+- Complete Graph:
 It runs "easy_isomorphism" function instead of complicated isomorphism_algorithm.
 To make it faster.
-- others
+- others:
 It runs "Basic Color Refinement"
 
 ## Description
