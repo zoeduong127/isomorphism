@@ -18,7 +18,7 @@ you can set this to "True".
 For testing, you need to set the filename from the test instances.
 For example, you can set like below.
 
-```text
+```python
 filename = "test/basicAut1.gr"
 ```
 
