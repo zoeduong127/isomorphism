@@ -1,39 +1,40 @@
 # module7_graph-isomorphism
 
+## Description
+This is the project in module 7 for TCS & AM where we have to solve GI problem and #Aut problem with the given graphs (regardless of sizes and types).
+
 ## How to start
+Download the whole project and open extracted folder with your preferred Python IDE. 
 
-To run the test instances, we use "final.py" file.
-There are three conditions to run "final.py".
+Make sure you put the graph instances in the same folder with the `final.py` file.
 
-- fast:
-If you want to run 'Fast Color refinement' function,
-you can set this to "True".
+To run the test instances, navigate to `final.py` file. There are three conditions to run (all conditions are set to **True** by default): 
+
+- automorphisms:
+If you want to calculate how many automorphisms,
+you can set this to **True**. Otherwise, set it to **False** to solve only GI problem.
+
+- fast_clr:
+If you want to use 'Fast Color refinement' function,
+you can set this to **True**. Otherwise, set it to **False** to use standard color refinement.
+
 - twins:
-If you want to run 'twins' function,
-you can set this to "True".
-- automorphism:
-If you want to calculate how many automorphisms with 'automorphism' function,
-you can set this to "True".
+If you want to preprocess by recognizing <mark>**twins**</mark>,
+you can set this to **True**. Otherwise, set it to **False** to run without twins pre-processing.
 
-For testing, you need to set the filename from the test instances.
-For example, you can set like below.
+For testing, you need to rename the variable 
+`filename` into your actual file name. 
+
+For example, you can set as below:
 
 ```python
-filename = "test/basicAut1.gr"
+filename = "basicAut1.grl"
 ```
 
-## Test and Deploy
+## Author acknowledgement
+- Tijn Minks <br> t.s.minks@student.utwente.nl
+- Huyen Duong duongthuhuyen@student.utwente.nl
+- Khanh Nguyen nguyenhoangnamkhanh@student.utwente.nl
+- Shun Nishijima s.nishijima@student.utwente.nl
 
-When you run the code,
-the code will do preprocessing checks as well.
-It checks whether
 
-- trees:
-It runs specific algorithms for tree types of graphs
-- Complete Graph:
-It runs "easy_isomorphism" function instead of complicated isomorphism_algorithm.
-To make it faster.
-- others:
-It runs "Basic Color Refinement"
-
-## Description
