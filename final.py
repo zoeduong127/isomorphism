@@ -4,7 +4,6 @@ from tree import isomorphism_algorithm
 from complete_edgeless_graphs import *
 from fast_coloring import fast_colorref
 from standard_coloring import basic_colorref
-from twins_recognition import *
 from twins_coloring import twins_colorref
 import os
 
@@ -54,26 +53,30 @@ def run(file, decision, fast, twin):
 
 
 if __name__ == "__main__":
-    # automorphisms = True
-    # fast_clr = True
-    # twins = True
-    # filename = 'test/basicGIAut1.grl'
-    # print(f'Filename: {filename}')
-    #
-    # start = timeit.default_timer()
-    # results = run(filename, automorphisms, fast_clr, twins)
-    # print_result(automorphisms, results)
-    # end = timeit.default_timer()
-    # print(f'Total computation time: {end - start}')
+    automorphisms = True
+    fast_clr = True
+    twins = True
+    filename = 'Competition7GIAut.grl'
+    print(f'Filename: {filename}')
 
-    directory = 'test'
-    for filename in os.listdir(directory):
-        if filename.endswith('.grl') or filename.endswith('gr'):
-            filepath = os.path.join(directory, filename)
-            print(f'\nFilename: {filename}')
-            if 'Aut' in filename:
-                results = run(filepath, True, True, True)
-                print_result(True, results)
-            elif 'GI' in filename:
-                results = run(filepath, False, True, True)
-                print_result(False, results)
+    start = timeit.default_timer()
+    results = run(filename, automorphisms, fast_clr, twins)
+    print_result(automorphisms, results)
+    end = timeit.default_timer()
+    print(f'Total computation time: {end - start}')
+
+    # directory = 'basic'
+    # for filename in os.listdir(directory):
+    #     start = timeit.default_timer()
+    #     if filename.endswith('.grl') or filename.endswith('gr'):
+    #         filepath = os.path.join(directory, filename)
+    #         start = timeit.default_timer()
+    #         print(f'\nFilename: {filename}')
+    #         if 'Aut' in filename:
+    #             results = run(filepath, True, True, True)
+    #             print_result(True, results)
+    #         elif 'GI' in filename:
+    #             results = run(filepath, False, True, True)
+    #             print_result(False, results)
+    #         end = timeit.default_timer()
+    #         print(f'Total computation time: {end - start}')
